@@ -131,7 +131,7 @@ const GITHUB_USER = "apapadaki-edu"
 const GITHUB__REPO = "testJs"
 const GITHUB_BRACH = "main"
 const GITHUB_CONTENT_PATH = "images"
-const GITHUB_URL = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB__REPO}/contents/${GITHUB_CONTENT_PATH}?ref=${GITHUB_BRACH}`
+const GITHUB_URL = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB__REPO}/contents/${GITHUB_CONTENT_PATH}`
 
 function getImageUrls(currPr="") {
   // fetches an array with objects containing the image URLs, and their names 

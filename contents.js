@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> b1de9d2dd1d942823d4b4c58aa57cc6bfdf3787b
 /*
 fileSHA stores the SHA of the file we want to fetch.
 
@@ -15,7 +12,11 @@ You can find the reference code in the next section,
 just change the folder path with the actual file path 
 (with file extension) and you're good to go!
 */
-
+const GITHUB_USER = "apapadaki-edu"
+const GITHUB__REPO = "testJs"
+const GITHUB_BRACH = "main"
+const GITHUB_CONTENT_PATH = "images"
+const GITHUB_URL = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB__REPO}/contents/${GITHUB_CONTENT_PATH}?ref=${GITHUB_BRACH}`
 let fileSHA, fileBlob, fileContent, file
 
 const getFileSHA = async () => {

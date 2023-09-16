@@ -12,11 +12,7 @@ You can find the reference code in the next section,
 just change the folder path with the actual file path 
 (with file extension) and you're good to go!
 */
-const GITHUB_USER = "apapadaki-edu"
-const GITHUB__REPO = "testJs"
-const GITHUB_BRACH = "main"
-const GITHUB_CONTENT_PATH = "images"
-const GITHUB_URL = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB__REPO}/contents/${GITHUB_CONTENT_PATH}?ref=${GITHUB_BRACH}`
+/*
 let fileSHA, fileBlob, fileContent, file
 
 const getFileSHA = async () => {
@@ -97,17 +93,18 @@ function base64EncodeUnicode(str) {
 
 
 getFileSHA()
-
+*/
 /* the api call url includes
     user: aspapadaki-edu/
     repo: home/
     new: branch (in ref= '' parameter) 
-*/
+
 document.body.style.forntSize = "3rem";
 fetch('https://api.github.com/repos/apapadaki-edu/home/contents/images?ref=new')
   .then(res => res.json())
   .then((json) => {
     document.body.innerHTML = `<pre>${JSON.stringify(json, undefined, 2)}</pre>`});
+*/
 
 /*
 fetch(`https://api.github.com/repos/apapadaki-edu/home/git/blobs/d8e4b0c68d1d399be4123d595dfae32843427975`)

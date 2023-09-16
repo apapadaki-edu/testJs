@@ -170,7 +170,7 @@ function loadImageFromBase64(base64img){
   // the data url is of the form "prefix,image_base64_str"
   // where prefix specifies the type of data and format
   return new Promise((resolve, reject) => {
-      var base64imgDataUrl = `data:image/webp;base64,${base64img}`;
+      var base64imgDataUrl = `data:image/jpg;base64,${base64img}`;
       var img = new Image();
       img.onload = function() {
           resolve(img);

@@ -141,6 +141,7 @@ function getImageUrls(currPr="") {
       fetch(GITHUB_URL)
       .then(res => res.json())
       .then((json) => {
+        console.log(json);
         const imgLinks = []
         json.forEach((img)=>{
           //this can be done with the start of a string ex. /^fs/

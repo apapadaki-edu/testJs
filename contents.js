@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> b1de9d2dd1d942823d4b4c58aa57cc6bfdf3787b
 /*
 fileSHA stores the SHA of the file we want to fetch.
 

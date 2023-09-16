@@ -145,8 +145,8 @@ function getImageUrls(currPr="") {
         const imgLinks = []
         json.forEach((img)=>{
           //this can be done with the start of a string ex. /^fs/
-          const regex = new RegExp(`^${currPr}.*[.]webp$`);
-          if(!regex.test(img.name)) return; 
+          //const regex = new RegExp(`^${currPr}.*[.]webp$`);
+          //if(!regex.test(img.name)) return; 
           imgLinks.push({"name": img.name,
                       "git_url": img.git_url});
         });
